@@ -54,4 +54,8 @@
   .home .box .flex > * {
     margin: 0 auto;
   }
+
+  .about .row .image img {
+    width: 100%;
+  }
 }
