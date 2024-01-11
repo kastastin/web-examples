@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Booking</title>
+
+    <!-- emoji favicon  -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛌</text></svg>"
+    />
+
+    <!-- font awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- swiperjs css  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- custom css file links  -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+  </head>
+  <body>
+    <section class="header">
+      <div class="flex">
+        <a href="#home" class="logo">Hotels and Resorts</a>
+        <a href="#availability" class="btn">Check availability</a>
+        <div id="menu-btn" class="fas fa-bars"></div>
+      </div>
+
+      <div class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#reservation">reservation</a>
+        <a href="#gallery">gallery</a>
+        <a href="#contact">contact</a>
+        <a href="#reviews">reviews</a>
+      </div>
+    </section>
+
+    <section id="home" class="home">
+      <div class="swiper home-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <img src="images/home-img-1.jpg" alt="Room image" />
+            <div class="flex">
+              <h3>Luxurious rooms</h3>
+              <a href="#reservation" class="btn">Make a reservation</a>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <img src="images/home-img-2.jpg" alt="Bar image" />
+            <div class="flex">
+              <h3>Foods and drinks</h3>
+              <a href="#availability" class="btn">Check availability</a>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <img src="images/home-img-3.jpg" alt="Hall image" />
+            <div class="flex">
+              <h3>Luxurious halls</h3>
+              <a href="#contact" class="btn">Contact us</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+
+    <section id="availability" class="availability">
+      <form action="" method="post">
+        <div class="flex">
+          <div class="box">
+            <p>Check in <span>*</span></p>
+            <input type="date" name="check_in" class="input" required />
+          </div>
+
+          <div class="box">
+            <p>Check out <span>*</span></p>
+            <input type="date" name="check_out" class="input" required />
+          </div>
+
+          <div class="box">
+            <p>Adults <span>*</span></p>
+            <select name="adults" class="input" required>
+              <option value="1">1 adult</option>
+              <option value="2">2 adults</option>
+              <option value="3">3 adults</option>
+              <option value="4">4 adults</option>
+              <option value="5">5 adults</option>
+              <option value="6">6 adults</option>
+            </select>
+          </div>
+
+          <div class="box">
+            <p>Childs <span>*</span></p>
+            <select name="adults" class="input" required>
+              <option value="-">0 child</option>
+              <option value="1">1 child</option>
+              <option value="2">2 childs</option>
+              <option value="3">3 childs</option>
+              <option value="4">4 childs</option>
+              <option value="5">5 childs</option>
+              <option value="6">6 childs</option>
+            </select>
+          </div>
+
+          <div class="box">
+            <p>Rooms <span>*</span></p>
+            <select name="adults" class="input" required>
+              <option value="1">1 room</option>
+              <option value="2">2 rooms</option>
+              <option value="3">3 rooms</option>
+              <option value="4">4 rooms</option>
+              <option value="5">5 rooms</option>
+              <option value="6">6 rooms</option>
+            </select>
+          </div>
+        </div>
+
+        <input
+          type="submit"
+          value="check availability"
+          name="check"
+          class="btn"
+        />
+      </form>
+    </section>
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

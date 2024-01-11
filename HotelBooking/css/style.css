@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap");
+
+:root {
+  --color-main: #2b1103;
+  --color-sub: #dcc69c;
+  --color-white: #fff;
+  --border: 0.1rem solid rgba(220, 198, 156, 0.3);
+  --transition: all 0.3s linear;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+
+*::selection {
+  background-color: var(--color-sub);
+  color: var(--color-main);
+}
+
+*::-webkit-scrollbar {
+  width: 1rem;
+  height: 0.5rem;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 5rem;
+  background-color: var(--color-sub);
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+}
+
+body {
+  background-color: var(--color-main);
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 4rem;
+  border: var(--border);
+  background-color: var(--color-main);
+  color: var(--color-sub);
+  font-size: 1.8rem;
+  text-align: center;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn:hover {
+  background-color: var(--color-sub);
+  color: var(--main-color);
+}
+
+.header {
+  padding-bottom: 0;
+}
+
+.header .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.header .flex .logo {
+  color: var(--color-sub);
+  font-size: 2.5rem;
+}
+
+.header .flex .btn {
+  margin-top: 0;
+}
+
+.header .flex .fa-bars {
+  display: none;
+  color: var(--color-sub);
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.header .navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--color-sub);
+}
+
+.header .navbar a {
+  padding: 1rem 3rem;
+  border-radius: 0.5rem;
+  font-size: 1.8rem;
+  color: var(--color-main);
+  text-transform: capitalize;
+  transition: var(--transition);
+}
+
+.header .navbar a:hover {
+  background-color: var(--color-main);
+  color: var(--color-sub);
+}
+
+.home .box img {
+  width: 100%;
+  height: 60vh;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+.home .box .flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.home .box .flex h3 {
+  color: var(--color-sub);
+  font-size: 2.5rem;
+  text-transform: capitalize;
+}
+
+.swiper-button-next {
+  right: 0;
+}
+
+.swiper-button-prev {
+  left: 0;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  top: 40%;
+  padding: 3rem 2rem;
+  background-color: var(--color-white);
+  opacity: 0.7;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  opacity: 1;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  color: var(--color-main);
+  font-size: 2rem;
+}
+
+.availability form .flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.availability form .flex .box {
+  flex: 1 1 20rem;
+}
+
+.availability form .flex .box p {
+  color: var(--color-sub);
+  font-size: 2rem;
+}
+
+.availability form .flex .box .input {
+  width: 100%;
+  margin: 1rem 0 2rem 0;
+  padding: 1rem 0;
+  background-color: var(--color-main);
+  color: var(--color-white);
+  font-size: 1.8rem;
+  border-bottom: var(--border);
+}
+
+.availability
+  form
+  .flex
+  .box
+  input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
