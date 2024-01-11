@@ -47,3 +47,16 @@ const swiperGallery = new Swiper(".gallery-slider", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+// <-- Accordion FAQ -->
+const tabsElems = document.querySelectorAll(".contact .row .faq .box");
+
+tabsElems.forEach((tabEl) => {
+  tabEl.addEventListener("click", () => {
+    tabsElems.forEach((otherTab) => {
+      if (otherTab !== tabEl) otherTab.classList.remove("active");
+    });
+
+    tabEl.classList.toggle("active");
+  });
+});
