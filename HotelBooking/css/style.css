@@ -247,3 +247,34 @@ section {
   font-size: 1.7rem;
   line-height: 2;
 }
+
+.services .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.services .box-container .box {
+  padding: 2rem;
+  text-align: center;
+}
+
+.services .box-container .box img {
+  height: 7rem;
+  margin-bottom: 1rem;
+}
+
+.services .box-container .box h3 {
+  margin: 1rem 0;
+  color: var(--color-sub);
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+.services .box-container .box p {
+  color: var(--color-sub);
+  font-size: 1.5rem;
+  line-height: 2;
+}
