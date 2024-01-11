@@ -328,3 +328,29 @@ section {
   input[type="date"]::-webkit-calendar-picker-indicator {
   filter: invert(1);
 }
+
+.gallery img {
+  width: 60rem;
+  height: 40rem;
+  margin-bottom: 4rem;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  user-select: none;
+}
+
+.gallery .swiper-button-next,
+.gallery .swiper-button-prev {
+  top: 45%;
+}
+
+.swiper-pagination-bullet {
+  background-color: var(--color-sub);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--color-white);
+}
+
+.swiper-pagination .swiper-pagination-bullets .swiper-pagination-horizontal {
+  bottom: 0;
+}

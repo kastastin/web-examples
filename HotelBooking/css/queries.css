@@ -58,4 +58,9 @@
   .about .row .image img {
     width: 100%;
   }
+
+  .gallery .swiper-button-next,
+  .gallery .swiper-button-prev {
+    top: 50%;
+  }
 }
