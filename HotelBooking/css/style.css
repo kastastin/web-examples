@@ -278,3 +278,53 @@ section {
   font-size: 1.5rem;
   line-height: 2;
 }
+
+.reservation form {
+  padding: 2rem;
+  border: var(--border);
+}
+
+.reservation form .flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.reservation form h3 {
+  margin-bottom: 2rem;
+  padding: 1.2rem;
+  border-radius: 0.5rem;
+  background-color: var(--color-sub);
+  color: var(--main-color);
+  font-size: 2.5rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.reservation form .flex .box {
+  flex: 1 1 40rem;
+}
+
+.reservation form .flex .box p {
+  color: var(--color-sub);
+  font-size: 1.8rem;
+}
+
+.reservation form .flex .box .input {
+  width: 100%;
+  margin: 1rem 0;
+  padding: 1rem 0;
+  border-bottom: var(--border);
+  background: var(--main-color);
+  color: var(--color-white);
+  font-size: 1.8rem;
+}
+
+.reservation
+  form
+  .flex
+  .box
+  input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
