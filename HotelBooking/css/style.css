@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap");
 
 :root {
   --color-main: #2b1103;
@@ -87,6 +87,7 @@ section {
 .header .flex .logo {
   color: var(--color-sub);
   font-size: 2.5rem;
+  font-weight: 500;
 }
 
 .header .flex .btn {
@@ -271,6 +272,7 @@ section {
   margin: 1rem 0;
   color: var(--color-sub);
   font-size: 2rem;
+  font-weight: 500;
   text-transform: capitalize;
 }
 
@@ -442,3 +444,38 @@ section {
 .contact .row .faq .box.active p {
   display: inline-block;
 }
+
+.reviews .box {
+  margin-bottom: 4rem;
+  padding: 2rem 6rem;
+  border: var(--border);
+  border-radius: 0.5rem;
+  text-align: center;
+  user-select: 2rem;
+}
+
+.reviews .box img {
+  width: 7rem;
+  height: 7rem;
+  margin-bottom: 0.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.reviews .box h5 {
+  margin: 1rem 0;
+  color: var(--color-sub);
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.reviews .box p {
+  color: var(--color-sub);
+  font-size: 1.7rem;
+  line-height: 2;
+}
+
+.reviews .swiper-button-next,
+  .reviews .swiper-button-prev {
+    top: 40%;
+  }

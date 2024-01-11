@@ -10,7 +10,8 @@ const swiperHome = new Swiper(".home-slider", {
   loop: true,
   effect: "coverflow",
   grabCursor: true,
-  speed: 800,
+  speed: 2000,
+  spaceBetween: 50,
   coverflowEffect: {
     rotate: 50,
     stretch: 0,
@@ -45,6 +46,30 @@ const swiperGallery = new Swiper(".gallery-slider", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+});
+
+// <-- Swiper reviews -->
+const swiperReviews = new Swiper(".reviews-slider", {
+  loop: true,
+  slidesPerView: "auto",
+  grabCursor: true,
+  speed: 800,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 1,
+    },
+    991: {
+      slidesPerView: 2,
+    },
   },
 });
 

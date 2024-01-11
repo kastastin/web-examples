@@ -36,6 +36,11 @@
   .swiper-button-prev {
     top: 35%;
   }
+
+  .reviews .swiper-button-next,
+  .reviews .swiper-button-prev {
+    top: 45%;
+  }
 }
 
 @media (max-width: 450px) {
