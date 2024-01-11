@@ -476,6 +476,53 @@ section {
 }
 
 .reviews .swiper-button-next,
-  .reviews .swiper-button-prev {
-    top: 40%;
-  }
+.reviews .swiper-button-prev {
+  top: 40%;
+}
+
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding-bottom: 3rem;
+}
+
+.footer .box-container .box a {
+  display: block;
+  padding: 1rem 0;
+  color: var(--color-sub);
+  font-size: 1.8rem;
+  cursor: auto;
+}
+
+.footer .box-container .box a span:hover {
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+.footer .box-container .box:first-child i {
+  margin-right: 1.7rem;
+}
+
+.footer .box-container .box:nth-child(2) {
+  text-align: center;
+}
+
+.footer .box-container .box:last-child {
+  text-align: right;
+}
+
+.footer .box-container .box:last-child i {
+  margin-left: 1.7rem;
+}
+
+.footer .credit {
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background-color: var(--color-sub);
+  color: var(--color-main);
+  font-size: 2rem;
+  text-align: center;
+}
