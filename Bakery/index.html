@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive bakery website - Bedimcode</title>
+    <title>Bakery</title>
 
     <!-- favicon -->
     <link
@@ -22,7 +22,48 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
-    <header id="header" class="header"></header>
+    <header id="header" class="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">Bakery</a>
+
+        <div id="nav-menu" class="nav__menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">Home</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#new" class="nav__link">News</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About us</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#favorite" class="nav__link">Favorites</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#visit" class="nav__link">Location</a>
+            </li>
+          </ul>
+
+          <!-- close btn -->
+          <div id="nav-close" class="nav__close">
+            <i class="ri-close-line"></i>
+          </div>
+
+          <img src="assets/img/bread-4.png" alt="img" class="nav__img-1" />
+          <img src="assets/img/bread-1.png" alt="img" class="nav__img-2" />
+        </div>
+
+        <!-- toggle btn -->
+        <div id="nav-toggle" class="nav__toggle">
+          <i class="ri-menu-fill"></i>
+        </div>
+      </nav>
+    </header>
 
     <main class="main">
       <section id="home" class="home section"></section>
