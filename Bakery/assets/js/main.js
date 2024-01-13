@@ -23,6 +23,16 @@ function linkHandler() {
   navMenuEl.classList.remove("show-menu");
 }
 
+// <-- add blur header -->
+window.addEventListener("scroll", headerHandler);
+
+function headerHandler() {
+  const headerEl = document.querySelector("#header");
+  this.scrollY >= 50
+    ? headerEl.classList.add("blur-header")
+    : headerEl.classList.remove("blur-header");
+}
+
 /*=============== ADD BLUR HEADER ===============*/
 
 /*=============== SHOW SCROLL UP ===============*/
