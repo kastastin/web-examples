@@ -407,7 +407,58 @@ img {
   justify-self: center;
 }
 
-/*=============== FAVORITES ===============*/
+.favorite__container {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem 1.5rem;
+  padding-top: 3.5rem;
+}
+
+.favorite_card {
+  position: relative;
+  padding: 6.5rem 1rem 1.25rem;
+  border: 2px solid transparent;
+  box-shadow: 0 12px 24px hsla(0, 0%, 0%, 0.3);
+  background-color: var(--container-color);
+  transition: border-color 0.4s;
+}
+
+.favorite_card:hover {
+  border-color: var(--first-color);
+}
+
+.favorite__img {
+  width: 120px;
+  position: absolute;
+  top: -2rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.favorite__title {
+  font-family: var(--second-font);
+  color: var(--first-color);
+  font-size: var(--h2-font-size);
+}
+
+.favorite__subtitle {
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.favorite__price {
+  font-family: var(--second-font);
+  font-size: var(--normal-font-size);
+}
+
+.favorite__button {
+  position: absolute;
+  bottom: 1.25rem;
+  right: 1rem;
+  padding: 0.25rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
 
 /*=============== VISIT ===============*/
 
