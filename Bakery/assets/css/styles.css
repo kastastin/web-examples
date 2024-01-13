@@ -344,7 +344,43 @@ img {
   background-color: var(--first-color-alt);
 }
 
-/*=============== NEW ===============*/
+.new__container {
+  row-gap: 3.5rem;
+  padding-top: 1.5rem;
+}
+
+.new__content {
+  row-gap: 2rem;
+}
+
+.new__card {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.new__img {
+  width: 150px;
+}
+
+.new__title {
+  margin-bottom: 0.5rem;
+  font-family: var(--second-font);
+  color: var(--first-color);
+  font-size: var(--h2-font-size);
+}
+
+.new__description {
+  font-size: var(--small-font-size);
+}
+
+.new__card:nth-child(2) img {
+  order: -1;
+}
+
+.new__button {
+  justify-self: center;
+}
 
 /*=============== ABOUT ===============*/
 
