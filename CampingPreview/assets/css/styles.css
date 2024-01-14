@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Poppins:wght@400;500;700&display=swap");
+
+:root {
+  --header-height: 3.5rem;
+
+  --color-white: #fff;
+  --color-first: hsl(195, 100%, 30%);
+  --color-title: hsl(210, 52%, 20%);
+  --color-text: hsl(210, 24%, 15%);
+  --color-body: hsl(210, 55%, 85%);
+  --color-gradient: linear-gradient(
+    90deg,
+    hsl(210, 55%, 20%),
+    hsl(192, 62%, 25%)
+  );
+
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --font-body: "Poppins", sans-serif;
+  --font-second: "Lora", serif;
+  --font-size-biggest: 2.25rem;
+  --font-size-normal: 0.938rem;
+  --font-size-small: 0.813rem;
+
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/* responsive typography */
+@media screen and (min-width: 1024px) {
+  :root {
+    --font-size-biggest: 4rem;
+    --font-size-normal: 1rem;
+    --font-size-small: 0.875rem;
+  }
+}
+
+/* base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--font-size-normal);
+  font-weight: var(--font-medium);
+  background-color: var(--color-body);
+  color: var(--color-text);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* reusable */
+.container {
+  max-width: 1120px;
+  margin-inline: 1.5rem;
+}
+
+.main {
+  overflow: hidden; /* for animation */
+}
+
+/*=============== HEADER & NAV ===============*/
+
+
+/* Navigation for mobile devices */
+
+/* Show menu */
+
+/* Change background header */
+
+/*=============== HOME ===============*/
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+
+/* For taller devices */
+
+/* For medium devices */
+
+/* For large devices */
+
+/* For 2K resolutions (2048 x 1152) */
