@@ -31,6 +31,23 @@ function linkHandler() {
   navMenuEl.classList.remove("show-menu");
 }
 
+// <-- smooth scrolling -->
+const links = document.querySelectorAll(".nav__menu a");
+
+links.forEach((linkEl) => {
+  linkEl.onclick = function (e) {
+    e.preventDefault();
+
+    const href = linkEl.getAttribute("href");
+    const offsetTop = document.querySelector(href).offsetTop;
+
+    scroll({
+      top: offsetTop,
+      behavior: "smooth",
+    });
+  };
+});
+
 // <-- add blur header -->
 window.addEventListener("scroll", headerHandler);
 
@@ -41,10 +58,91 @@ function headerHandler() {
     : headerEl.classList.remove("blur-header");
 }
 
-/*=============== SWIPER FAVORITES ===============*/
+// <-- swiper favorites -->
+const swiperFavorites = new Swiper(".favorite__swiper", {
+  loop: true,
+  slidesPerView: "auto",
+  centeredSlides: "auto",
+  grabCursor: true,
 
-/*=============== SHOW SCROLL UP ===============*/
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
+    },
+  },
+});
 
-/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
+// <-- send form to telegram -->
+const form = document.querySelector(".footer__form");
+const userEmail = document.querySelector("#email");
 
-/*=============== SCROLL REVEAL ANIMATION ===============*/
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const chatId = "342013084";
+  const botToken = "6618612381:AAHhdDR51mVS-NV3Jmhgn1UlW3nGp32mJVw";
+  const text = `Headphones Form:%0A%0AEmail: ${userEmail.value}`;
+
+  fetch(
+    `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${text}`
+  )
+    .then((response) => response.json())
+    .then((data) => {
+      alert(
+        data.ok ? "Your email was successfully sent" : "Something went wrong("
+      );
+      form.reset();
+    });
+});
+
+// <-- show scroll up tooltip -->
+window.addEventListener("scroll", scrollUpHandler);
+
+function scrollUpHandler() {
+  const scrollUpEl = document.querySelector("#scroll-up");
+  this.scrollY >= 350
+    ? scrollUpEl.classList.add("show-scrollup")
+    : scrollUpEl.classList.remove("show-scrollup");
+}
+
+// <-- scroll sections active links -->
+const sectionsElems = document.querySelectorAll("section[id]");
+
+window.addEventListener("scroll", scrollHandler);
+
+function scrollHandler() {
+  const scrollDown = window.scrollY;
+
+  sectionsElems.forEach((sectionEl) => {
+    const sectionHeight = sectionEl.offsetHeight;
+    const sectionTop = sectionEl.offsetTop - 58;
+    const sectionId = sectionEl.getAttribute("id");
+    const sectionClass = document.querySelector(
+      `.nav__menu a[href*=${sectionId}]`
+    );
+
+    scrollDown > sectionTop && scrollDown <= sectionTop + sectionHeight
+      ? sectionClass.classList.add("active-link")
+      : sectionClass.classList.remove("active-link");
+  });
+}
+
+// <-- scroll reveal animations -->
+const sr = ScrollReveal({
+  origin: "top",
+  distance: "60px",
+  duration: 2500,
+  delay: 400,
+  // reset: true, // repeat animation
+});
+
+sr.reveal(`.home__social, .favorite__container, .sponsor__container`);
+
+sr.reveal(`.home__title span:nth-child(1)`, { origin: "left", opacity: 1 });
+sr.reveal(`.home__title span:nth-child(3)`, { origin: "right", opacity: 1 });
+sr.reveal(`.home__tooltip, .home__button, .model__button, .footer`, {
+  origin: "bottom",
+});
+
+sr.reveal(`.about__data`, { origin: "left" });
+sr.reveal(`.about__img, .model__tooltip`, { origin: "right" });

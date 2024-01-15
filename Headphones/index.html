@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive headphones website - Bedimcode</title>
+    <title>Headphones</title>
 
     <!-- favicon -->
     <link
@@ -19,7 +19,7 @@
     />
 
     <!-- swiper css -->
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
@@ -31,7 +31,7 @@
         <div id="nav-menu" class="nav__menu">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#home" class="nav__link">Home</a>
+              <a href="#home" class="nav__link active-link">Home</a>
             </li>
 
             <li class="nav__item">
@@ -136,16 +136,212 @@
         </div>
       </section>
 
-      <section id="favorite" class="favorite section"></section>
+      <section id="favorite" class="favorite section">
+        <h2 class="section__title">CHOOSE YOUR FAVORITE</h2>
 
-      <section id="model" class="model section"></section>
+        <div class="favorite__container">
+          <div class="favorite__swiper swiper">
+            <div class="swiper-wrapper">
+              <article class="favorite__article swiper-slide">
+                <img
+                  src="assets/img/favorite-2.png"
+                  alt="img"
+                  class="favorite__img"
+                />
+                <span class="favorite__model">White Model</span>
+              </article>
 
-      <section class="sponsor section"></section>
+              <article class="favorite__article swiper-slide">
+                <img
+                  src="assets/img/favorite-4.png"
+                  alt="img"
+                  class="favorite__img"
+                />
+                <span class="favorite__model">Teal Model</span>
+              </article>
+
+              <article class="favorite__article swiper-slide">
+                <img
+                  src="assets/img/favorite-3.png"
+                  alt="img"
+                  class="favorite__img"
+                />
+                <span class="favorite__model">Red Model</span>
+              </article>
+
+              <article class="favorite__article swiper-slide">
+                <img
+                  src="assets/img/favorite-1.png"
+                  alt="img"
+                  class="favorite__img"
+                />
+                <span class="favorite__model">Black Model</span>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="model" class="model section">
+        <h2 class="section__title">MODEL SPECIFICATIONS</h2>
+
+        <div class="model__container container grid">
+          <div class="model__content">
+            <img src="assets/img/model-img.png" alt="img" class="model__img" />
+
+            <div class="model__tooltip model__tooltip-1">
+              <img
+                src="assets/img/tooltip-right.svg"
+                alt="img"
+                class="model__tooltip-img"
+              />
+              <span class="model__tooltip-text">Best Comfort</span>
+            </div>
+
+            <div class="model__tooltip model__tooltip-2">
+              <img
+                src="assets/img/tooltip-right.svg"
+                alt="img"
+                class="model__tooltip-img"
+              />
+              <span class="model__tooltip-text">Easy Adjustment</span>
+            </div>
+
+            <div class="model__tooltip model__tooltip-3">
+              <img
+                src="assets/img/tooltip-right.svg"
+                alt="img"
+                class="model__tooltip-img"
+              />
+              <span class="model__tooltip-text">Fast Charge</span>
+            </div>
+
+            <div class="model__tooltip model__tooltip-4">
+              <img
+                src="assets/img/tooltip-right.svg"
+                alt="img"
+                class="model__tooltip-img"
+              />
+              <span class="model__tooltip-text">Custom Audio</span>
+            </div>
+          </div>
+
+          <a href="#" class="model__button button">
+            Buy Now <i class="ri-play-circle-fill"></i>
+          </a>
+        </div>
+      </section>
+
+      <section class="sponsor section">
+        <div class="sponsor__container container grid">
+          <img src="assets/img/sponsor-1.png" alt="img" class="sponsor__img" />
+          <img src="assets/img/sponsor-2.png" alt="img" class="sponsor__img" />
+          <img src="assets/img/sponsor-3.png" alt="img" class="sponsor__img" />
+          <img src="assets/img/sponsor-4.png" alt="img" class="sponsor__img" />
+        </div>
+      </section>
     </main>
 
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="footer__container container grid">
+        <div>
+          <a href="#" class="footer__logo">JBL</a>
+        </div>
+
+        <div class="footer__data grid">
+          <div>
+            <h3 class="footer__title">Products</h3>
+
+            <ul class="footer__links">
+              <li>
+                <a href="#" class="footer__link">Headphones</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer__link">Earphones</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer__link">Earbuds</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer__link">Accesories</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer__title">Support</h3>
+
+            <ul class="footer__links">
+              <li>
+                <a href="#" class="footer__link">Product Help</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer__link">Register</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer__link">Updates</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer__link">Provides</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__group">
+            <form class="footer__form">
+              <input
+                type="email"
+                id="email"
+                class="footer__input"
+                placeholder="Email"
+              />
+              <button class="footer__button button">
+                Subscribe <i class="ri-send-plane-fill"></i>
+              </button>
+            </form>
+
+            <div class="footer__social">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="footer__social-link"
+              >
+                <i class="ri-instagram-fill"></i>
+              </a>
+
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                class="footer__social-link"
+              >
+                <i class="ri-facebook-circle-fill"></i>
+              </a>
+
+              <a
+                href="https://www.youtube.com/"
+                target="_blank"
+                class="footer__social-link"
+              >
+                <i class="ri-youtube-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <span class="footer__copy">&#169; Developed by Kastastin</span>
+    </footer>
 
     <!-- scrollup tooltip -->
+    <a href="#" id="scroll-up" class="scrollup">
+      <i class="ri-arrow-up-s-line"></i>
+    </a>
 
     <script src="assets/js/scrollreveal.min.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
