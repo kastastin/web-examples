@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Poppins:wght@400;500;600&display=swap");
+
+:root {
+  --header-height: 3.5rem;
+
+  --color-first: hsl(140, 40%, 48%);
+  --color-first-alt: hsl(140, 40%, 44%);
+  --color-title: hsl(140, 4%, 12%);
+  --color-text: hsl(140, 4%, 40%);
+  --color-text-light: hsl(140, 4%, 64%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-body: hsl(0, 0%, 100%);
+  --color-container: hsl(0, 0%, 95%);
+
+  --img-filter: invert(1);
+  --img-shadow: drop-shadow(0 8px 12px hsla(0, 0%, 0%, 0.2));
+
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --font-body: "Poppins", sans-serif;
+  --font-second: "Cherry Bomb One", cursive;
+  --font-size-biggest: 3rem;
+  --font-size-big: 2rem;
+  --font-size-h1: 1.5rem;
+  --font-size-h2: 1.25rem;
+  --font-size-h3: 1rem;
+  --font-size-normal: 0.938rem;
+  --font-size-small: 0.813rem;
+
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/* responsive typography */
+@media screen and (min-width: 1150px) {
+  :root {
+    --font-size-biggest: 5.5rem;
+    --font-size-big: 3rem;
+    --font-size-h1: 2.25rem;
+    --font-size-h2: 1.5rem;
+    --font-size-h3: 1.25rem;
+    --font-size-normal: 1rem;
+    --font-size-small: 0.875rem;
+  }
+}
+
+/* base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+input,
+button {
+  font-family: var(--font-body);
+  font-size: var(--font-size-normal);
+}
+
+body {
+  background-color: var(--color-body);
+  color: var(--color-text);
+  transition: background-color 0.4s;
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--color-title);
+  font-weight: var(--font-medium);
+  line-height: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*=============== THEME ===============*/
+
+/*========== Variables Dark Theme ==========*/
+
+/*========== 
+	Color changes in some parts of 
+	the website, in dark theme
+==========*/
+
+/* resusable */
+.container {
+  max-width: 1120px;
+  margin-inline: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.section {
+  padding-block: 5rem 1rem;
+}
+
+.section__title {
+  margin-bottom: 1rem;
+  font-family: var(--font-second);
+  font-size: var(--font-size-big);
+  text-align: center;
+}
+
+.main {
+  overflow: hidden; /* for animation ScrollReveal */
+}
+
+/*=============== HEADER & NAV ===============*/
+
+/* Navigation for mobile devices */
+
+/* Show menu */
+
+/* Add shadow header */
+
+/* Active link */
+
+/*=============== HOME ===============*/
+
+/*=============== BUTTON ===============*/
+
+/*=============== ENJOY ===============*/
+
+/*=============== ABOUT ===============*/
+
+/*=============== POPULAR ===============*/
+
+/*=============== JOIN ===============*/
+
+/*=============== FOOTER ===============*/
+
+/*=============== SCROLL BAR ===============*/
+
+/*=============== SCROLL UP ===============*/
+
+/* Show Scroll Up */
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+
+/* For medium devices */
+
+/* For large devices */
