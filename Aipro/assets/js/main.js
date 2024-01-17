@@ -110,3 +110,10 @@ const swiperBenefits = new Swiper(".benefit__swiper", {
   //   },
   // },
 });
+
+// <-- flip product card -->
+const flippedButtonEl = document.querySelector(".flip-button");
+
+flippedButtonEl.addEventListener("click", function () {
+  this.closest(".card").classList.toggle("flipped");
+});
