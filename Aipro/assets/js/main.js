@@ -117,3 +117,45 @@ const flippedButtonEl = document.querySelector(".flip-button");
 flippedButtonEl.addEventListener("click", function () {
   this.closest(".card").classList.toggle("flipped");
 });
+
+// <-- accordion faq -->
+const questionsElems = document.querySelectorAll(".faq__question");
+
+let activeIndex;
+
+questionsElems.forEach((elem, i) => {
+  elem.addEventListener("click", (e) => {
+    if (activeIndex === i) {
+      elem.querySelector("input").checked = false;
+      elem.querySelector("label").style.borderRadius = "10px";
+      elem.querySelector(".collapsible").style.borderRadius = "10px";
+      elem
+        .querySelector(".ri-close-line")
+        ?.classList.replace("ri-close-line", "ri-add-line");
+    }
+
+    if (elem.querySelector("input").checked) {
+      activeIndex = i;
+
+      questionsElems.forEach((el, i) => {
+        const question = el.querySelector("label");
+        const answer = el.querySelector(".collapsible");
+        const icon = el.querySelector(".ri-close-line");
+        const isActive = i === activeIndex;
+
+        if (isActive) {
+          question.style.borderRadius = "10px 10px 0 0";
+          answer.style.borderRadius = "0 0 10px 10px";
+          el.querySelector(".ri-add-line").className = "ri-close-line";
+        } else {
+          question.style.borderRadius = "10px";
+          answer.style.borderRadius = "10px";
+          if (el.querySelector(".ri-add-line"))
+            el.querySelector(".ri-add-line").className = "ri-add-line";
+          if (el.querySelector(".ri-close-line"))
+            el.querySelector(".ri-close-line").className = "ri-add-line";
+        }
+      });
+    }
+  });
+});

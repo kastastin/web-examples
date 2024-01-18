@@ -961,7 +961,7 @@ img {
 
 .table__header .table__value {
   width: 3.2rem;
-  border-top-left-radius: 100px; 
+  border-top-left-radius: 100px;
   border-top-right-radius: 100px;
   background-color: rgba(59, 67, 92, 0.9);
   font-size: var(--font-size-normal);
@@ -986,6 +986,100 @@ img {
 .product__img-circle-medium,
 .product__img-circle-small,
 .product__img-spring {
+  display: none;
+}
+
+.faq__container {
+  position: relative;
+  grid-template-columns: 320px;
+  justify-content: center;
+  row-gap: 2rem;
+  padding-top: 2rem;
+}
+
+.faq__question label {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  column-gap: 0.75rem;
+  padding: 0 0.75rem;
+  border-radius: 10px;
+  background-color: hsl(201, 32%, 17%);
+  color: var(--color-title);
+  cursor: pointer;
+  transition: background-color 0.4s;
+}
+
+.faq__question label:hover {
+  background-color: hsl(201, 32%, 19%);
+}
+
+.question__img-circle {
+  flex-shrink: 0;
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  border-radius: 100px;
+  background-color: var(--color-main);
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.question__img-circle:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 1px 16px hsla(200, 75%, 51%, 0.4);
+}
+
+.question__img-circle i {
+  font-size: 1.25rem;
+}
+
+.faq__question-title {
+  font-family: var(--font-body);
+  font-size: var(--font-size-normal);
+  font-weight: var(--font-medium);
+}
+
+input[name="question"]:checked + .collapsible {
+  height: 7rem;
+}
+
+.faq__question .collapsible {
+  width: 100%;
+  position: relative;
+  display: grid;
+  place-items: center;
+  padding: 0 0.75rem;
+  border-radius: 10px;
+  background-color: hsl(201, 32%, 17%);
+  color: var(--color-title);
+}
+
+.question__answer {
+  color: var(--color-text);
+  font-size: var(--font-size-normal);
+  text-align: center;
+}
+
+input[name="question"] + .collapsible {
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 0.4s ease;
+  -moz-transition: height 0.4s ease;
+  -ms-transition: height 0.4s ease;
+  -o-transition: height 0.4s ease;
+  transition: height 0.4s ease, border-radius 0.4s ease;
+}
+
+input[name="question"] {
+  display: none;
+}
+
+.faq__img-circle-big,
+.faq__img-circle-medium,
+.faq__img-circle-small,
+.faq__img-spring {
   display: none;
 }
 
