@@ -95,20 +95,21 @@ const swiperBenefits = new Swiper(".benefit__swiper", {
   loop: true,
   grabCursor: true,
   slidesPerView: 1.5,
-  centeredSlides: true,
+  speed: 800,
   spaceBetween: 30,
-  speed: 400,
+  centeredSlides: true,
 
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
 
-  // breakpoints: {
-  //   768: {
-  //     slidesPerView: 3,
-  //   },
-  // },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 60,
+    },
+  },
 });
 
 // <-- flip product card -->

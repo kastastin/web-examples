@@ -192,7 +192,7 @@ img {
 }
 
 /* mobile navigation */
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1150px) {
   .nav__menu {
     width: 100%;
     position: fixed;
@@ -345,6 +345,7 @@ img {
   position: absolute;
   top: -6rem;
   right: -9rem;
+  z-index: -1;
 }
 
 .home__img-circle-medium-1 {
@@ -492,6 +493,10 @@ img {
 .swiper-slide-duplicate-active {
   filter: blur(0);
   scale: 1;
+}
+
+.swiper-slide {
+  user-select: none;
 }
 
 .swiper-button-prev:after,
