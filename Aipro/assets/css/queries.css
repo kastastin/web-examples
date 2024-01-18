@@ -123,7 +123,6 @@
   }
 
   .back .card__button-main {
-    /* padding: 0.5rem 3rem; */
     font-size: var(--font-size-smaller);
     text-align: center;
   }
@@ -139,6 +138,87 @@
 
   .faq__question .collapsible {
     padding: 0 0.5rem;
+  }
+
+  .question__answer {
+    font-size: var(--font-size-small);
+    font-weight: var(--font-semi-bold);
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .home__container {
+    row-gap: 5rem;
+  }
+
+  .home__data {
+    padding: 0 7rem;
+  }
+
+  .home__img-text-bg {
+    top: 5rem;
+    left: 14rem;
+  }
+
+  .home__img-circle-medium-2 {
+    top: 19rem;
+    right: 6rem;
+  }
+
+  .home__img-spring-1 {
+    top: 11rem;
+    left: 4rem;
+  }
+
+  .home__img-spring-2 {
+    top: 26rem;
+    left: 13rem;
+  }
+
+  .how__content {
+    row-gap: 4rem;
+  }
+
+  .who__container {
+    grid-template-columns: initial;
+    justify-content: initial;
+    row-gap: 3rem;
+  }
+
+  .who__content {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 4rem;
+  }
+
+  .who__image {
+    width: 30%;
+    grid-column: 1/-1;
+  }
+
+  .who__img {
+    align-self: center;
+  }
+
+  .product__container {
+    margin-inline: 7rem;
+  }
+
+    .card__description {
+    font-size: var(--font-size-normal);
+    font-weight: var(--font-medium);
+  }
+
+  .card__description-back {
+    font-size: var(--font-size-normal);
+  }
+
+  .faq__container {
+    grid-template-columns: 500px;
+    margin-inline: 1rem;
+  }
+
+  .faq__question label {
+    height: 4rem;
   }
 
   .question__answer {

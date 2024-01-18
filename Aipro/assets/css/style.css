@@ -360,6 +360,7 @@ img {
   top: 22rem;
   right: -2rem;
   opacity: 0.3;
+  pointer-events: none;
 }
 
 .home__img-circle-small-1 {
@@ -1018,7 +1019,7 @@ img {
 }
 
 input[name="question"]:checked + .collapsible {
-  height: 7rem;
+  height: 5rem;
 }
 
 .faq__question .collapsible {
