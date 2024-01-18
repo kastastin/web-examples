@@ -1083,6 +1083,70 @@ input[name="question"] {
   display: none;
 }
 
+.footer {
+  padding-block: 2rem 1rem;
+  overflow: hidden;
+}
+
+.footer__container {
+  grid-template-columns: repeat(2, auto);
+  row-gap: 1.25rem;
+}
+
+.footer__logo {
+  align-self: center;
+}
+
+.footer__logo a {
+  color: var(--color-title);
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-semi-bold);
+}
+
+.footer__button {
+  justify-self: flex-end;
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+}
+
+.footer__link {
+  display: inline-block;
+  align-self: center;
+  color: var(--color-title);
+  transition: color 0.4s;
+}
+
+.footer__link:hover {
+  color: var(--color-text);
+}
+
+.footer__social {
+  justify-self: flex-end;
+  display: flex;
+  column-gap: 0.5rem;
+}
+
+.footer__social a i {
+  display: inline-block;
+  color: var(--color-title);
+  font-size: 2rem;
+  transition: transform 0.4s;
+}
+
+.footer__social a:hover i {
+  transform: translateY(-2px);
+}
+
+.footer__copy {
+  display: block;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-text);
+  font-size: var(--font-size-normal);
+  text-align: center;
+  cursor: default;
+}
+
 /* scrollup tooltip */
 .scrollup {
   position: fixed;
@@ -1104,5 +1168,5 @@ input[name="question"] {
 }
 
 .show-scrollup {
-  bottom: 3rem;
+  bottom: 2rem;
 }
