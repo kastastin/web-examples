@@ -1,0 +1,148 @@
+@media screen and (max-width: 340px) {
+  .nav__menu {
+    row-gap: 2rem;
+    padding-block: 2.5rem;
+  }
+
+  .nav__button-ghost {
+    padding: 0.75rem 2rem;
+  }
+
+  .nav__img-circle {
+    width: 10px;
+  }
+
+  .nav__img-spring {
+    width: 20px;
+    top: 20rem;
+  }
+
+  .home__img-text-bg {
+    top: 4.5rem;
+    left: 2.5rem;
+  }
+
+  .home__img-circle-big {
+    width: 200px;
+    top: -5rem;
+    right: -8rem;
+  }
+
+  .home__img-circle-medium-2 {
+    width: 200px;
+    top: 26rem;
+    right: -4.5rem;
+  }
+
+  .home__img-circle-small-1 {
+    width: 10px;
+    top: 15rem;
+    right: 1rem;
+  }
+
+  .home__img-circle-small-2 {
+    top: 44rem;
+    left: 3.5rem;
+  }
+
+  .home__img-spring-1 {
+    top: 11rem;
+    left: 1rem;
+  }
+
+  .home__img-spring-2 {
+    width: 25px;
+    top: 34rem;
+    left: 2rem;
+  }
+
+  .how__container {
+    grid-template-columns: initial;
+  }
+
+  .benefit__article {
+    max-height: 17rem;
+    row-gap: 0.75rem;
+  }
+
+  .benefit__img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .benefit__description {
+    font-size: var(--font-size-small);
+  }
+
+  .who__container {
+    grid-template-columns: 268px;
+  }
+
+  .who__img {
+    justify-self: center;
+    align-self: center;
+    width: 50px;
+    height: 50px;
+  }
+
+  .who__img-spring {
+    width: 20px;
+    top: 73rem;
+    left: 17rem;
+  }
+
+  .card .back {
+    padding-bottom: 1rem;
+  }
+
+  .product__container {
+    margin-inline: 1rem;
+  }
+
+  .product__tabs {
+    height: 7rem;
+  }
+
+  .product__tabs-months li {
+    padding: 0 0.5rem;
+  }
+
+  .card__discount {
+    font-size: var(--font-size-small);
+    font-weight: var(--font-semi-bold);
+  }
+
+  .card__description {
+    padding: 0 1rem;
+    font-weight: var(--font-regular);
+  }
+
+  .card__description-back {
+    font-size: var(--font-size-smaller);
+    font-weight: var(--font-regular);
+  }
+
+  .back .card__button-main {
+    /* padding: 0.5rem 3rem; */
+    font-size: var(--font-size-smaller);
+    text-align: center;
+  }
+
+  .faq__container {
+    grid-template-columns: initial;
+    margin-inline: 1rem;
+  }
+
+  .faq__question label {
+    height: 5rem;
+  }
+
+  .faq__question .collapsible {
+    padding: 0 0.5rem;
+  }
+
+  .question__answer {
+    font-size: var(--font-size-small);
+    font-weight: var(--font-semi-bold);
+  }
+}
