@@ -163,11 +163,21 @@ img {
   position: fixed;
   top: 0;
   left: 0;
+  background-color: transparent;
   z-index: var(--z-fixed);
 }
 
-.scroll-header {
-  box-shadow: 0 2px 16px hsla(0, 0%, 100%, 0.05);
+.blur-header::after {
+  content: "";
+  width: 1000%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: hsla(23, 12%, 4%, 0.2);
+  backdrop-filter: blur(32px);
+  -webkit-backdrop-filter: blur(32px);
+  z-index: -1;
 }
 
 .nav {
@@ -202,7 +212,9 @@ img {
     flex-direction: column;
     row-gap: 3.5rem;
     padding-block: 4rem;
-    background-color: var(--color-nav);
+    background-color: hsla(23, 12%, 4%, 0.2);
+    backdrop-filter: blur(32px);
+    -webkit-backdrop-filter: blur(32px);
     transition: top 0.4s;
   }
 }
@@ -294,7 +306,7 @@ img {
 
 .home__container {
   position: relative;
-  row-gap: 5rem;
+  row-gap: 3rem;
   text-align: center;
 }
 
@@ -329,15 +341,13 @@ img {
 }
 
 .home__img {
-  width: 250px;
+  width: 300px;
   justify-self: center;
+  transform: translateX(3rem);
 }
 
 .home__img-text-bg {
-  width: 100px;
-  position: absolute;
-  top: 5rem;
-  left: 3rem;
+  display: none;
 }
 
 .home__img-circle-big {
@@ -348,23 +358,14 @@ img {
   z-index: -1;
 }
 
-.home__img-circle-medium-1 {
+.home__img-circle-medium {
   width: 150px;
   position: absolute;
   top: 15rem;
   left: -6rem;
 }
 
-.home__img-circle-medium-2 {
-  width: 250px;
-  position: absolute;
-  top: 22rem;
-  right: -2rem;
-  opacity: 0.3;
-  pointer-events: none;
-}
-
-.home__img-circle-small-1 {
+.home__img-circle-small {
   width: 15px;
   position: absolute;
   top: 18rem;
@@ -372,28 +373,11 @@ img {
   z-index: -1;
 }
 
-.home__img-circle-small-2 {
-  width: 10px;
-  position: absolute;
-  top: 39rem;
-  left: 6rem;
-  z-index: -1;
-}
-
-.home__img-spring-1 {
+.home__img-spring {
   width: 20px;
   position: absolute;
   top: 8rem;
   left: 1rem;
-}
-
-.home__img-spring-2 {
-  width: 30px;
-  position: absolute;
-  top: 30rem;
-  right: 13rem;
-  transform: scaleX(-1);
-  z-index: -1;
 }
 
 .how__container {

@@ -48,14 +48,14 @@ links.forEach((linkEl) => {
   };
 });
 
-// <-- add scroll header -->
+// <-- add blur header -->
 window.addEventListener("scroll", headerHandler);
 
 function headerHandler() {
   const headerEl = document.querySelector("#header");
   this.scrollY >= 50
-    ? headerEl.classList.add("scroll-header")
-    : headerEl.classList.remove("scroll-header");
+    ? headerEl.classList.add("blur-header")
+    : headerEl.classList.remove("blur-header");
 }
 
 // <-- show scroll up tooltip -->
