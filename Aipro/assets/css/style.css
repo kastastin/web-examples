@@ -1008,7 +1008,7 @@ img {
 }
 
 input[name="question"]:checked + .collapsible {
-  height: 5rem;
+  height: 6rem;
 }
 
 .faq__question .collapsible {

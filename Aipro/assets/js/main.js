@@ -109,6 +109,10 @@ const swiperBenefits = new Swiper(".benefit__swiper", {
       slidesPerView: 2,
       spaceBetween: 60,
     },
+    1440: {
+      slidesPerView: 3.5,
+      spaceBetween: 60,
+    },
   },
 });
 
